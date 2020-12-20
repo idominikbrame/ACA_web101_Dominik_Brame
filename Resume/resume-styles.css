@@ -1,3 +1,97 @@
+* {
+  margin: 0 auto;
+}
 body {
-  background-color: red;
+
+}
+
+.top-grid {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 20vh;
+  height: 20vh;
+  text-align: left;
+  align-items: center;
+  padding: 1em;
+  width: 100%;
+}
+
+.profile-img {
+  display: inline;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}
+
+.bottomBanner {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 10vh;
+  height: 10vh;
+  text-align: left;
+  align-items: center;
+  padding: 1em;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.bottomBanner h4 {
+  padding-left: 5vw;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.profile-img img {
+ max-height: 100%;
+ grid-column: 1/2;
+ align-self: center;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 5vw;
+  width: 100%;
+}
+
+.name h1 {
+  margin: 0;
+  font-size: 4em;
+}
+
+.leftColumn {
+  margin: 2vh 2vw;
+  display: grid;
+  grid-template-columns: 30vw;
+  grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
+  background: rgb(64,181,204);
+  background: linear-gradient(120deg, rgb(15, 134, 202) 23%, rgba(0,209,251,1) 97%);
+  width: 30vw;
+  text-align: center;
+}
+
+.leftColumn div {
+  margin-top: 10vh;
+}
+
+.bottomGrid {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightColumn {
+  margin: 2%;
+  display: grid;
+  grid-template-columns: 65vw;
+  grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+  width: 65vw;
+}
+.rightColumn div {
+  margin-top: 5vh;
 }
