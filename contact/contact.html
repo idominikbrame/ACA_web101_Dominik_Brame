@@ -7,30 +7,29 @@
   <link rel="stylesheet" href="contact-styles.css">
 </head>
 <body>
-  <header> <h1>Contact Us</h1></header>
-  <main class="form-container">
-    <form>
-      <div>
-        <label>Last Name<span>*</span></label><br>
-        <input type="text"><br>
-      </div>
-      <div>
-        <label>Last Name<span>*</span></label><br>
-        <input type="text"><br>
-      </div>
-      <div>
-        <label>Email<span>*</span></label><br>
-        <input type="email"><br>
-      </div>
-      <div>
-        <label>Date<span>*</span></label><br>
-        <input type="date"><br>
-      </div>
-      <div>
-        <label>Message<span>*</span></label><br>
-        <textarea row="8" cols="5"> </textarea>
-      </div>
-    </form>
-  </main>  
+ <main>
+   <h1 class="company-name">Scope<span>ify</span></h1>
+   <header>
+     <h1> Get in touch</h1>
+   </header>
+   <form>
+     <div class="input-section">
+      <label for="name">Name <span>*</span></label> <br>
+      <input type="text" id="name" placeholder="John Doe">
+     </div>
+     <div class="input-section">
+      <label for="email">E-mail <span>*</span></label> <br>
+      <input type="text" id="email" placeholder="JohnDoe@email.com">
+     </div>
+     <div class="input-section">
+      <label for="name">Company Name <span>*</span></label> <br>
+      <input type="text" id="name" placeholder="Company">
+     </div>
+     <div class="textarea">
+     <textarea placeholder="Message" rows="8" cols="30"></textarea><br>  
+     </div>     
+     <button type="submit">Send</button>
+   </form>
+ </main>
 </body>
 </html>
