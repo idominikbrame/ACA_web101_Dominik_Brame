@@ -74,4 +74,8 @@ body {
   grid-template-rows: 120px 120px 120px 120px 120px 120px;
   grid-gap:5px;
   }
+  h1 {
+    margin-top: 10vh;
+    font-size: 15px;
+  }
 }
