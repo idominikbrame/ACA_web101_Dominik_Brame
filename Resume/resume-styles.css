@@ -31,6 +31,12 @@ body {
 
 .profilePicture img {
   height: 70%;
+  transition: all 1s ease-in-out;
+  opacity: 1;
+}
+
+.profilePicture img:hover {
+  opacity: 0;
 }
 
 .title {
@@ -160,4 +166,37 @@ body {
 .history div {
   width: 100%;
   border-bottom: 2px solid rgb(1, 82, 82);
+}
+#phoneText {
+  visibility: visible;
+  cursor: pointer;
+}
+
+.fade-in-sara { 
+  animation: fadeInSara 5s
+}
+
+.fade-in-parker {
+  animation: fadeInParker 7s;
+}
+
+@keyframes fadeInSara {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeInParker {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 2;
+  }
 }
