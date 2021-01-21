@@ -5,8 +5,13 @@ html, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, 
   outline: 0;
   vertical-align: baseline;
   background: transparent;
+  box-sizing: border-box;
 }
-
+main {
+  overflow: hidden;
+  background-color: rgb(241, 241, 241);
+  padding-bottom: 20px;
+}
 body {
   margin: 0;
   padding: 0; 
@@ -41,7 +46,9 @@ header {
 input {
   height: 30px;
   border: none;
-  width: 250px;
+  width: 350px;
+  padding-left: 10px;
+  border-radius: 5px;
 }
 
 input:focus, textarea:focus{
@@ -55,7 +62,7 @@ label span {
 textarea {
   width: 100%;
   margin: 5vw;
-  padding: 3vw;
+  padding: 1vw;
   border: none;
   resize: none;
   overflow: hidden;
@@ -91,12 +98,14 @@ button {
   .input-section label, input {
     margin: 3vh auto 0 4vw;
     font-size: 15px;
+    overflow: hidden;
   }
   
   input {
     height: 40px;
     border: none;
-    width: 350px;
+    width: 450px;
+    overflow: hidden;
 
   }
 
@@ -140,7 +149,7 @@ button {
   }
 
   button {
-    margin: 5vh 10vw 0 0;
+    margin: 5vh 10vw 100px 0;
     width: 110px;
     height: 110px;
     font-size: 25px;
@@ -149,6 +158,8 @@ button {
 
 /* Desktop Responsive */
 
-@media (min-width: 1200px) {
-
+@media (min-width: 1000px) {
+  body {
+    margin: 10px 200px 0px 200px;
+  }
 }
